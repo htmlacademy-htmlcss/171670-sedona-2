@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
-* Студент: [Диана Шайсултанова](https://up.htmlacademy.ru/htmlcss-individual/2/user/171670).
-* Наставник: `Неизвестно`.
+- Студент: [Диана Шайсултанова](https://up.htmlacademy.ru/htmlcss-individual/2/user/171670).
+- Наставник: [Екатерина Комнатная](https://htmlacademy.ru/profile/id215761).
 
 ---
 
