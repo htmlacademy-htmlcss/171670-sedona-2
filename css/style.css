@@ -78,7 +78,7 @@ img {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
-main {
+.main {
   flex-grow: 1;
 }
 .button {
