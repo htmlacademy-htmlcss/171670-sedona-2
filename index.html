@@ -9,7 +9,7 @@
   <body class="page-body">
     <div class="page-wrap container">
       <header class="main-header">
-        <a href="/" class="main-header__logo">
+        <a href="#" class="main-header__logo">
           <img
             src="img/logo.svg"
             alt="Логотип Седоны"
@@ -20,7 +20,7 @@
         <nav class="main-header__navigation navigation">
           <ul class="navigation__list list-reset">
             <li class="navigation__item">
-              <a href="" class="navigation__link navigation__link--active"
+              <a href="#" class="navigation__link navigation__link--active"
                 >Главная</a
               >
             </li>
@@ -39,7 +39,7 @@
             </a>
           </li>
           <li class="navigation-user__item">
-            <a class="navigation-user__link favorite" href="#">
+            <a class="navigation-user__link navigation-user--favorite" href="#">
               <span class="favorite__number">12</span>
               <span class="visually-hidden"> Избранное </span>
             </a>
@@ -84,22 +84,28 @@
               />
             </li>
             <li class="main-advantages__item advantages-card">
-              <h3 class="advantages-card__title">Небольшая площадь</h3>
-              <p class="advantages-card__text">
-                Все достопримечательности находятся очень близко
-              </p>
+              <div class="main-advantages__wrap">
+                <h3 class="advantages-card__title">Небольшая площадь</h3>
+                <p class="advantages-card__text">
+                  Все достопримечательности находятся очень близко
+                </p>
+              </div>
             </li>
             <li class="main-advantages__item advantages-card">
-              <h3 class="advantages-card__title">Красивая дорога</h3>
-              <p class="advantages-card__text">
-                Ехать в Седону из Лас-Вегаса совсем не скучно!
-              </p>
+              <div class="main-advantages__wrap">
+                <h3 class="advantages-card__title">Красивая дорога</h3>
+                <p class="advantages-card__text">
+                  Ехать в Седону из Лас-Вегаса совсем не скучно!
+                </p>
+              </div>
             </li>
             <li class="main-advantages__item advantages-card">
-              <h3 class="advantages-card__title">Мало туристов</h3>
-              <p class="advantages-card__text">
-                Большинство едет в гранд каньон и толпится там
-              </p>
+              <div class="main-advantages__wrap">
+                <h3 class="advantages-card__title">Мало туристов</h3>
+                <p class="advantages-card__text">
+                  Большинство едет в Гранд Каньон и толпится там
+                </p>
+              </div>
             </li>
             <li
               class="main-advantages__item advantages-card advantages-card--blue"
@@ -177,7 +183,14 @@
             class="main-subcribe__form subcribe-form"
           >
             <div class="subcribe-form__wrap">
-              <input type="email" name="email" placeholder="Ваш e-mail" />
+              <label class="visually-hidden" for="form-email">Ваш e-mail</label>
+              <input
+                type="email"
+                name="email"
+                id="form-email"
+                placeholder="Ваш e-mail"
+                required
+              />
               <button
                 type="submit"
                 class="subcribe-form__button button button--blue"
@@ -191,17 +204,17 @@
       <footer class="footer">
         <ul class="footer__social list-reset social-list">
           <li class="social-list__item">
-            <a href="#" class="social-list__link">
+            <a href="#" class="social-list__link social-list__link--vk">
               <span class="visually-hidden">vkontakte</span>
             </a>
           </li>
           <li class="social-list__item">
-            <a href="#" class="social-list__link">
+            <a href="#" class="social-list__link social-list__link--tg">
               <span class="visually-hidden">telegram</span>
             </a>
           </li>
           <li class="social-list__item">
-            <a href="#" class="social-list__link">
+            <a href="#" class="social-list__link social-list__link--tube">
               <span class="visually-hidden">youtube</span>
             </a>
           </li>
@@ -211,13 +224,20 @@
             >+7 (812) 812-12-12</a
           >
         </div>
-        <a href="/" class="footer__logo">
-          <img
-            src="img/logo-footer.svg"
-            alt="Логотип Седоны"
+        <a href="https://htmlacademy.ru/intensive/htmlcss" class="footer__logo">
+          <svg
             width="115"
             height="33"
-          />
+            viewBox="0 0 115 34"
+            aria-label="Логотип «HTML Academy». Перейти на сайт Академии."
+            role="img"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="#000"
+          >
+            <path
+              d="M0 13.26v2.6h2.5v-2.6h-2.5Zm11.6-8.4c-1.6 0-2.8.7-3.6 1.7h-.1v-6.2h-2v15.5h2v-5.3c0-2.1 1.3-3.6 3.3-3.6 1.8 0 2.9 1.4 2.9 3.2v5.7h2v-6.1c.1-3-1.8-4.9-4.5-4.9Zm15 .3h-4.8v-3.7h-2v3.8h-1.9v2h1.9v6c0 1.7 1 2.7 2.7 2.7h4.1v-2h-3.7c-.7 0-1.1-.4-1.1-1.1v-5.7h4.8v-2Zm14.5-.2c-1.6 0-2.9.8-3.5 2.1h-.1c-.6-1.2-1.8-2.1-3.4-2.1-1.4 0-2.5.8-3.1 1.8h-.1v-1.6h-1.9v10.6h2v-5.4c0-2 1-3.5 2.6-3.5 1.5 0 2.4 1 2.4 2.6v6.3h2v-5.6c0-2.4 1.4-3.3 2.6-3.3 1.5 0 2.4 1 2.4 2.6v6.3h2v-6.5c.1-2.5-1.4-4.3-3.9-4.3Zm6.7 8.1c0 1.7 1 2.7 2.8 2.7h2v-2h-1.7c-.7 0-1.1-.4-1.1-1.1v-12.3h-2v12.7Zm-18.9 7c-.9-1.1-2.2-1.8-3.9-1.8-3.1 0-5.4 2.3-5.4 5.6s2.3 5.6 5.4 5.6c1.8 0 3-.8 3.8-1.9h.1v1.6h2v-10.6h-2v1.5Zm-3.6 7.4c-2.2 0-3.6-1.6-3.6-3.6s1.4-3.6 3.6-3.6 3.6 1.6 3.6 3.6c0 1.9-1.4 3.6-3.6 3.6Zm18.9-5.1c-.5-2.4-2.6-4.1-5.4-4.1a5.4 5.4 0 0 0-5.6 5.6c0 3.1 2.2 5.6 5.6 5.6 2.8 0 4.9-1.8 5.4-4.2h-2.1a3.4 3.4 0 0 1-3.3 2.3c-2.2 0-3.6-1.6-3.6-3.6s1.4-3.6 3.6-3.6c1.6 0 2.8 1 3.3 2.2h2.1v-.2Zm10.9-2.3c-.9-1.1-2.2-1.8-3.9-1.8-3.1 0-5.4 2.3-5.4 5.6s2.3 5.6 5.4 5.6c1.8 0 3-.8 3.8-1.9h.1v1.6h2v-10.6h-2v1.5Zm-3.6 7.4c-2.2 0-3.6-1.6-3.6-3.6s1.4-3.6 3.6-3.6 3.6 1.6 3.6 3.6c0 1.9-1.5 3.6-3.6 3.6Zm17.2-7.3c-.9-1.1-2.2-1.9-3.9-1.9-3.1 0-5.4 2.3-5.4 5.6s2.2 5.6 5.4 5.6c1.7 0 3-.8 3.8-1.8h.1v1.5h2v-15.4h-2v6.4Zm-3.6 7.3c-2.2 0-3.6-1.6-3.6-3.6s1.4-3.6 3.6-3.6 3.6 1.6 3.6 3.6c-.1 2-1.5 3.6-3.6 3.6Zm13.2-9.2c-3.3 0-5.5 2.5-5.5 5.6 0 3 2.1 5.6 5.5 5.6 2.5 0 4.5-1.3 5.2-3.6h-2.1c-.5 1-1.6 1.6-3 1.6-1.9 0-3.3-1.3-3.4-2.9h8.8c.2-3.6-2-6.3-5.5-6.3Zm0 1.9c1.7 0 3 1 3.3 2.6h-6.5c.3-1.5 1.5-2.6 3.2-2.6Zm19.9-1.9c-1.6 0-2.9.8-3.6 2h-.1c-.6-1.2-1.8-2-3.4-2-1.4 0-2.5.7-3.1 1.8v-1.5h-1.9v10.6h2v-5.4c0-2 1-3.4 2.6-3.5 1.5 0 2.4 1 2.4 2.6v6.3h2v-5.6c0-2.4 1.4-3.3 2.6-3.3 1.5 0 2.4 1 2.4 2.6v6.3h2v-6.5c.1-2.6-1.4-4.4-3.9-4.4Zm11.2 9.1-3.6-8.9h-2.2l4.8 11.6c-.3.9-.7 1.2-1.7 1.2h-2.5v2h2.5c1.8 0 2.8-.8 3.5-2.6l4.7-12.2h-2.1l-3.4 8.9Z"
+            ></path>
+          </svg>
         </a>
       </footer>
     </div>
@@ -239,8 +259,10 @@
               <input
                 type="text"
                 id="date-start"
-                placeholder="27 апреля 2020"
+                value="27 апреля 2020"
+                placeholder="Укажите дату"
                 name="datestart"
+                required
               />
               <button type="button" class="form__calendar">
                 <span class="visually-hidden">Дата заезда</span>
@@ -251,13 +273,15 @@
             </div>
           </div>
           <div class="form__item">
-            <label for="date-start" class="form__name">Дата Выезда:</label>
+            <label for="date-end" class="form__name">Дата Выезда:</label>
             <div class="form__input">
               <input
                 type="text"
                 id="date-end"
-                placeholder="1 сентября 2023"
+                value="1 сентября 2023"
+                placeholder="Укажите дату"
                 name="dateend"
+                required
               />
               <button type="button" class="form__calendar">
                 <span class="visually-hidden">Дата выезда</span>
@@ -279,7 +303,14 @@
                     >Убавить количество взрослых</span
                   >
                 </button>
-                <input type="number" id="adult" placeholder="2" name="adult" />
+                <input
+                  type="number"
+                  id="adult"
+                  value="2"
+                  name="adult"
+                  min="0"
+                  required
+                />
                 <button
                   type="button"
                   class="input-number__item input-number__item--plus"
@@ -311,8 +342,10 @@
                 <input
                   type="number"
                   id="children"
-                  placeholder="2"
+                  value="2"
                   name="children"
+                  min="0"
+                  required
                 />
                 <button
                   type="button"
