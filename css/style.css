@@ -383,6 +383,7 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-grow: 1;
 }
 
 .main-advantages__item:first-child .advantages-card__img {
